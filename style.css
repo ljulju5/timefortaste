@@ -1,0 +1,197 @@
+/*************
+Basic styles
+****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4d;
+  font-size: 16px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.container {
+  width: 70%;
+  margin: 0 auto; }
+  @media (max-width: 1024px) {
+    .container {
+      width: 85%; } }
+
+/****************
+header
+****************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header article {
+    flex: 0 0 20%; }
+    header article p {
+      color: #4a4a4d;
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 15px; }
+    header article p + p {
+      margin-top: 0; }
+
+/****************
+intro
+****************/
+.intro {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .intro article:first-child {
+    flex: 0 0 50%; }
+    .intro article:first-child h1 {
+      font-family: "Amatic SC", cursive;
+      font-size: 5rem;
+      margin-bottom: 20px; }
+    .intro article:first-child p {
+      line-height: 1.5;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      text-align: justify; }
+    .intro article:first-child h4 {
+      margin: 25px 0;
+      font-size: 1.3rem;
+      font-weight: 800; }
+    .intro article:first-child ol {
+      margin-left: 16px;
+      margin-bottom: 30px; }
+    .intro article:first-child img {
+      width: 50%;
+      height: auto; }
+  .intro article:last-child {
+    flex: 0 0 46%;
+    display: flex;
+    flex-wrap: wrap; }
+    .intro article:last-child .imgBox {
+      flex: 0 0 50%; }
+      .intro article:last-child .imgBox h3 {
+        font-family: "Amatic SC", cursive;
+        font-size: 2.2rem; }
+    .intro article:last-child .imgBox:nth-child(4) {
+      text-align: right; }
+
+/****************
+focaccia
+****************/
+.focaccia, .pizza, .bread {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .focaccia article:first-child, .pizza article:first-child, .bread article:first-child {
+    flex: 0 0 70%; }
+    .focaccia article:first-child h2, .pizza article:first-child h2, .bread article:first-child h2 {
+      font-family: "Amatic SC", cursive;
+      font-size: 5rem;
+      margin-bottom: 10px; }
+    .focaccia article:first-child h5, .pizza article:first-child h5, .bread article:first-child h5,
+    .focaccia article:first-child h6,
+    .pizza article:first-child h6,
+    .bread article:first-child h6 {
+      font-size: 1.2rem;
+      font-weight: 700; }
+    .focaccia article:first-child h6, .pizza article:first-child h6, .bread article:first-child h6 {
+      margin-top: 60px; }
+    .focaccia article:first-child .recipe, .pizza article:first-child .recipe, .bread article:first-child .recipe {
+      margin: 5px 0 30px 0; }
+      .focaccia article:first-child .recipe td, .pizza article:first-child .recipe td, .bread article:first-child .recipe td {
+        padding: 5px 10px 0 0; }
+      .focaccia article:first-child .recipe td:last-child, .pizza article:first-child .recipe td:last-child, .bread article:first-child .recipe td:last-child {
+        text-align: right; }
+      .focaccia article:first-child .recipe tr:last-child td, .pizza article:first-child .recipe tr:last-child td, .bread article:first-child .recipe tr:last-child td {
+        border-top: 1px solid #4a4a4d;
+        padding: 0;
+        text-align: left; }
+    .focaccia article:first-child .preparation td, .pizza article:first-child .preparation td, .bread article:first-child .preparation td {
+      padding: 10px 0; }
+    .focaccia article:first-child .preparation td:first-child, .pizza article:first-child .preparation td:first-child, .bread article:first-child .preparation td:first-child {
+      font-weight: 600; }
+    .focaccia article:first-child ul, .pizza article:first-child ul, .bread article:first-child ul {
+      margin-left: 16px;
+      margin-top: 20px;
+      line-height: 1.8; }
+  .focaccia article:last-child, .pizza article:last-child, .bread article:last-child {
+    flex: 0 0 28%; }
+    .focaccia article:last-child .imgBox, .pizza article:last-child .imgBox, .bread article:last-child .imgBox {
+      margin-bottom: 40px; }
+
+/****************
+focaccia
+****************/
+/****************
+bread
+****************/
+/****************
+gallery
+****************/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .gallery article:first-child {
+    flex: 0 0 37%; }
+    .gallery article:first-child img {
+      margin-bottom: 20px; }
+  .gallery article:last-child {
+    flex: 0 0 60%; }
+    .gallery article:last-child p {
+      padding: 20px 20px 50px 20px;
+      font-size: 1.5rem;
+      font-weight: 800; }
+    .gallery article:last-child .imgSet1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .gallery article:last-child .imgSet1 img:first-child {
+        flex: 0 0 64%; }
+      .gallery article:last-child .imgSet1 img:last-child {
+        flex: 0 0 33%; }
+    .gallery article:last-child .imgSet2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .gallery article:last-child .imgSet2 img:first-child {
+        flex: 0 0 33%; }
+      .gallery article:last-child .imgSet2 img:last-child {
+        flex: 0 0 64%; }
+
+/****************
+footer
+****************/
+footer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center; }
+  footer article {
+    flex: 0 0 20%; }
+    footer article ul {
+      list-style: none; }
+      footer article ul a {
+        color: #4a4a4d;
+        text-decoration: none; }
+        footer article ul a:hover {
+          color: #fbbb21;
+          transition: .3s ease-out; }
+      footer article ul li:nth-child(3) {
+        margin-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
