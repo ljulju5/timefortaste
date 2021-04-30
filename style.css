@@ -16,7 +16,7 @@ img {
   height: auto; }
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto; }
   @media (max-width: 1024px) {
     .container {
@@ -30,7 +30,8 @@ header {
   justify-content: space-between;
   align-items: center; }
   header article {
-    flex: 0 0 20%; }
+    flex: 0 0 20%;
+    padding-top: 20px; }
     header article p {
       color: #4a4a4d;
       font-size: 1.1rem;
