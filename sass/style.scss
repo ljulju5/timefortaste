@@ -1,12 +1,7 @@
-$primaryColor: #fbbb21;
-$fontSize: 16px;
-$fontColor: #4a4a4d;
-$fontFamily: 'Open Sans',
-sans-serif; //'Roboto', sans-serif;
-$fontHeading: 'Amatic SC',
-cursive;
-$sectionPadding: 100px 0;
-
+@import "variables";
+@import "mixins";
+@import "header";
+@import "animations";
 
 /*************
 Basic styles
@@ -26,6 +21,14 @@ body {
 img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
 }
 
 .container {
@@ -34,6 +37,49 @@ img {
 
     @media(max-width:1024px) {
         width: 85%;
+    }
+
+    &--pall {
+        padding-top: 4.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1.5rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+}
+
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    iframe {
+        flex: 0 0 60%;
+        border-radius: 5px;
+    }
+
+    h4 {
+        flex: 0 0 32%;
+        font-family: $fontHeading;
+        font-size: 5rem;
+    }
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none !important;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
     }
 }
 
@@ -111,12 +157,12 @@ intro
     }
 
     article:last-child {
-        flex: 0 0 46%;
+        flex: 0 0 30%;
         display: flex;
         flex-wrap: wrap;
 
         .imgBox {
-            flex: 0 0 50%;
+            flex: 0 0 80%;
 
             h3 {
                 font-family: $fontHeading;
@@ -124,9 +170,9 @@ intro
             }
         }
 
-        .imgBox:nth-child(4) {
-            text-align: right;
-        }
+        // .imgBox:nth-child(4) {
+        //     text-align: right;
+        // }
     }
 
 
@@ -204,8 +250,6 @@ focaccia
             margin-bottom: 40px;
         }
     }
-
-
 }
 
 /****************
@@ -251,6 +295,7 @@ gallery
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-bottom: 15px;
             //width: 50%;
 
             img:first-child {
@@ -281,6 +326,20 @@ gallery
 }
 
 /****************
+imgSection
+****************/
+.imgSection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+
+    img {
+        flex: 0 0 30%;
+    }
+}
+
+/****************
 footer
 ****************/
 footer {
@@ -303,7 +362,6 @@ footer {
 
             a {
                 color: $fontColor;
-                text-decoration: none;
 
                 &:hover {
                     color: $primaryColor;
