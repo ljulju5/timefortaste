@@ -1,7 +1,8 @@
 .header {
     position: relative;
     z-index: 1;
-    background-color: #f4f7f8;
+    background-color: #f6f9fa;
+    box-shadow: 1px 1px 2px rgba(74, 74, 77, .2);
 
 
     // Hamburger Open Styles
@@ -39,19 +40,23 @@
     &__logo {
         flex: 0 0 15%;
 
-        hgroup {
-            color: $fontColor;
-            font-size: .9rem;
-            font-weight: 600;
-            line-height: 1.5;
-            text-align: center;
-            margin-top: 15px;
-            text-decoration: none;
+        img {
+            width: 65%;
         }
 
-        h4+h4 {
-            margin-top: 0;
-        }
+        // hgroup {
+        //     color: $fontColor;
+        //     font-size: .9rem;
+        //     font-weight: 600;
+        //     line-height: 1.5;
+        //     text-align: center;
+        //     margin-top: 15px;
+        //     text-decoration: none;
+        // }
+
+        // h4+h4 {
+        //     margin-top: 0;
+        // }
 
         // width: 20%;
         // height: auto;

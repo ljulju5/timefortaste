@@ -1,7 +1,8 @@
 .header {
   position: relative;
   z-index: 1;
-  background-color: #f4f7f8; }
+  background-color: #f6f9fa;
+  box-shadow: 1px 1px 2px rgba(74, 74, 77, 0.2); }
   .header.open .overlay {
     display: block; }
   .header.open .header__toggle > span:first-child {
@@ -21,16 +22,8 @@
     background-color: #f4f7f8; }
   .header__logo {
     flex: 0 0 15%; }
-    .header__logo hgroup {
-      color: #4a4a4d;
-      font-size: .9rem;
-      font-weight: 600;
-      line-height: 1.5;
-      text-align: center;
-      margin-top: 15px;
-      text-decoration: none; }
-    .header__logo h4 + h4 {
-      margin-top: 0; }
+    .header__logo img {
+      width: 65%; }
   .header__toggle > span {
     display: block;
     width: 26px;
@@ -335,7 +328,7 @@ imgSection
 footer
 ****************/
 footer {
-  background-color: #f4f7f8;
+  background-color: #f6f9fa;
   margin-top: 40px; }
   footer .container {
     padding-top: 40px;
