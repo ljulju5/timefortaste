@@ -1,7 +1,7 @@
 .header {
     position: relative;
     z-index: 1;
-
+    background-color: #f4f7f8;
 
 
     // Hamburger Open Styles
@@ -33,6 +33,7 @@
         background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
+        background-color: #f4f7f8;
     }
 
     &__logo {
