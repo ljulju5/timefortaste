@@ -187,12 +187,10 @@ intro
         padding: 40px 0 20px 0 !important;
     }
 
-
-
     article:first-child {
         flex: 0 0 50%;
 
-        @media(max-width:768px) {
+        @include breakpoint-down(medium) {
             flex: 0 0 100%;
         }
 
@@ -203,6 +201,11 @@ intro
             text-align: justify;
         }
 
+        img+p {
+
+            margin-top: 15px;
+        }
+
         ol {
             margin-left: 16px;
             margin-bottom: 30px;
@@ -211,6 +214,10 @@ intro
         img {
             width: 50%;
             height: auto;
+
+            @include breakpoint-down(medium) {
+                width: 100%;
+            }
         }
 
     }
@@ -236,13 +243,7 @@ intro
                 flex: 0 0 100%;
             }
         }
-
-        // .imgBox:nth-child(4) {
-        //     text-align: right;
-        // }
     }
-
-
 }
 
 /****************
@@ -446,64 +447,6 @@ gallery
     }
 }
 
-// .gallery2 {
-//     .grid-container {
-//         display: grid;
-//         grid-template-columns: auto auto auto;
-//         grid-gap: 20px;
-//         padding: 10px;
-//     }
-
-//     .grid-container>div {
-//         background-color: rgba(255, 255, 255, 0.8);
-//         padding: 20px 0;
-//     }
-
-//     .grid-item1 {
-
-//         @include breakpoint-down(large) {
-//             margin-top: 20px;
-//         }
-
-//         @include breakpoint-down(medium) {
-//             margin-top: 28px;
-//         }
-
-//         @include breakpoint-down(small) {
-//             margin-top: 90px;
-//         }
-
-//     }
-
-//     .grid-item2 {
-//         grid-column-start: span 2;
-
-//         p {
-//             font-size: 1.18rem;
-//             font-weight: 800;
-//             text-align: left;
-//             padding: 15px 0;
-
-//             @include breakpoint-down(large) {
-//                 font-size: .9rem;
-//                 padding: 5px 0;
-//             }
-
-//             @include breakpoint-down(medium) {
-//                 font-size: .8rem;
-//                 font-weight: 600;
-//                 padding: 5px 0;
-//             }
-
-
-//         }
-//     }
-
-//     .grid-item3 {
-//         grid-column-start: span 3;
-//     }
-// }
-
 /****************
 imgSection
 ****************/
@@ -544,10 +487,6 @@ footer {
 
         article {
             flex: 0 0 20%;
-
-            // @media(max-width:768px) {
-            //     flex: 0 0 100%;
-            // }
 
             @include breakpoint-down(medium) {
                 flex: 0 0 100%;
