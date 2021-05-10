@@ -33,7 +33,7 @@ var topbutton = document.getElementById("goToTopBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topbutton.style.display = "block";
   } else {
     topbutton.style.display = "none";
